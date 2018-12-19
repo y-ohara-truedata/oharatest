@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
- name: ohara-server
+ name: ohara-cl
  labels:
-   name: ohara-server
+   name: ohara-cl
 spec:
  ports:
  - port: 8080
    targetPort: 8080
  type: NodePort
  selector:
-   name: ohara-server
+   name: ohara-cl
 

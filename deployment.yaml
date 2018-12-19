@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: ohara-server
+ name: ohara-cl
 spec:
  replicas: 2
  selector:
    matchLabels:
-     name: ohara-server
+     name: ohara-cl
  template:
    metadata:
      labels:
-       name: ohara-server
+       name: ohara-cl
    spec:
      containers:
-     - name: ohara-server
-       image: gcr.io/study-sandbox/ohara-server:latest
+     - name: ohara-cl
+       image: gcr.io/study-sandbox/ohara-cl:latest
        ports:
        - containerPort: 8080
          protocol: TCP
