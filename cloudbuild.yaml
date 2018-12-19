@@ -32,7 +32,7 @@ steps:
   - 'set'
   - 'image'
   - 'deployment/ohara-cl'
-  - 'sample-server=gcr.io/$PROJECT_ID/ohara-cl:$_VERSION'
+  - 'ohara-cl=gcr.io/$PROJECT_ID/ohara-cl:$_VERSION'
 # デプロイのステータス確認
 - name: 'gcr.io/cloud-builders/kubectl'
   args:
